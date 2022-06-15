@@ -42,7 +42,7 @@ if (isset($_SESSION['arrayError'])) {
        </div><br>
        Nombre de point: <input type="number" name="numero" class="TAILLE">
        <span><?php echo isset($arrayError['numero']) ? $arrayError['numero'] : '' ?></span><br><br>
-       Type de réponses:
+       Type de répons:
        <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
            <option value="">Donnez le type de réponse</option>
            <option value="simple" >Réponse simple</option>
