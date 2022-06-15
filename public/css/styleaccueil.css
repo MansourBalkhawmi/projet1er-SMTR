@@ -1,0 +1,164 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 80%;
+    height: 600px;
+    margin-left: 13%;
+    background-color: white;
+}
+body{
+    background-image: url(../images/design-header.jpg);
+}
+.ima{
+    width:100%;
+    height:87px ;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.a1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #775AB7;
+    width: 100%;
+    height: 100px;
+}
+.a11{
+    width:7.5%;
+    height:82px ;
+    border-radius: 50%;
+   
+
+}
+.a12{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:62%;
+    height:60px ;
+    margin-top: 40px;
+}
+.a22{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.a{
+    color: white;
+   
+}
+.a:hover{
+	color: black;
+}
+.a13{
+    width:14%;
+    height:45px ;
+}
+.a2{
+    background-color: white;
+    width: 100%;
+    height: 440px;
+}
+.a21{
+    background-color: white;
+    border: 3px solid #775AB7;
+    width: 42%;
+    height: 455px;
+    margin-left: 27%;
+    border-radius: 55px;
+    margin-top: -45px;
+}
+button{
+    width: 75%;
+    height:40px;
+    font-size: 19px;
+    color: white;
+    background-color: #775AB7;
+   
+
+}
+button:hover {background-color: #4a337d}
+
+button:active {
+  background-color:  #4a337d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.b{
+    color: #775AB7;
+    font-size: 30px;
+    margin-left: 28%;
+    margin-top: 25px;
+}
+
+.inputs{
+    border:solid #775AB7;
+    width: 80%;
+    height: 20px;
+    border-radius: 42px;
+}
+span{
+    color: red;
+    font-size: 12px;
+
+}
+.b1{
+    font-size: 15px;
+    margin-top: 22px;
+    margin-left: 16%;
+}
+label{
+    margin-left: 15px;
+}
+.b2{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 16%;
+}
+.b3{
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 16%;
+}
+.b4{
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 16%;
+}
+.b5{
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 16%;
+}
+.b6{
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 16%;
+}
+.b7{
+   font-size: 10px;
+   margin-top: 4px;
+}
+.b8{
+    width: 28%;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 35%;
+    margin-top: 30px;
+
+}
+.BTN{
+    width: 78%;
+    height:40px;
+    font-size: 19px;
+    color: #775AB7;
+    background-color: white ;
+}
+.aa{
+    color: #775AB7;
+    font-size: 15px;
+} 

@@ -1,0 +1,131 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 80%;
+    height: 800px;
+    margin-left: 13%;
+    background-color: white;
+}
+body{
+    background-image: url(../images/design-header.jpg);
+}
+.ima{
+    width:100%;
+    height:87px ;
+    border-radius: 50%;
+    margin-top: -7px;
+}
+.a1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #775AB7;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+}
+.a11{
+    width:7.5%;
+    height:82px ;
+    border-radius: 50%;
+   
+
+}
+.a12{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:62%;
+    height:60px ;
+    margin-top: 40px;
+}
+.a22{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.a{
+    color: white;
+   
+}
+.a:hover{
+	color: black;
+}
+.a13{
+    width:14%;
+    height:45px ;
+}
+.a2{
+    background-color: white;
+    width: 100%;
+    height: 440px;
+}
+.a21{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    height: 700px;
+    margin-left: 27%;
+    border-radius: 10px;
+    margin-top: -32px;
+}
+button{
+    width: 84%;
+    height:40px;
+    font-size: 19px;
+    color: #775AB7;
+    background-color: white;
+   
+
+}
+button:hover {background-color: #4a337d}
+
+button:active {
+  background-color:  #4a337d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+form{
+    width: 50%;
+    border: 3px solid #775AB7;
+    margin-top: -105px;
+    margin-left: 21.5%;
+    border-radius: 20px;
+
+}
+.b1{
+    margin-top: 15px;
+    margin-left: 35px;
+}
+label{
+    font-size: 20px;
+}
+.b11{
+    width: 40px;
+    height: 20px;
+    font-size: 20px;
+    background-color: #d9d9d9;
+    margin-left: 15px;
+}
+.b12{
+    width: 45px;
+    height: 30px;
+    background-color: #775AB7;
+    color: white;
+    margin-left: 20px;
+    
+}
+.b2{
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 4.5%;
+    border-radius: 20px;
+
+}
+li{
+    font-size: 20px;
+}

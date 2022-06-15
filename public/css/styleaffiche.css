@@ -1,0 +1,137 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 80%;
+    height: 900px;
+    margin-left: 13%;
+    background-color:white;
+}
+body{
+    background-image: url(../images/design-header.jpg);
+}
+.ima{
+    width:100%;
+    height:87px ;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.a1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #775AB7;
+    width: 100%;
+    height: 100px;
+}
+.a11{
+    width:7.5%;
+    height:82px ;
+    border-radius: 50%;
+   
+
+}
+.a12{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:62%;
+    height:60px ;
+    margin-top: 40px;
+}
+.a22{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.a{
+    color: white;
+   
+}
+.a:hover{
+	color: black;
+}
+.a13{
+    width:14%;
+    height:45px ;
+}
+.a2{
+    background-color: white;
+    width: 100%;
+    height: 440px;
+    margin-bottom: 200px;
+}
+.a21{
+    
+    width: 50%;
+    height: 460px;
+    margin-left: 18%;
+    border-radius: 55px;
+    margin-top:15px;
+}
+button{
+    width: 79%;
+    height:40px;
+    font-size: 18px;
+    color: #775AB7;
+    background-color:white ;
+   
+
+}
+button:hover {background-color: #4a337d}
+
+button:active {
+  background-color:  #4a337d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+h1{
+    color: red;
+    margin-left: 30%;
+}
+table, td, th {
+    border-collapse: collapse;
+    color: #775AB7;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+table {
+    width: 120%;
+    height: 80px;
+    border: 2px solid white;
+}
+
+td {
+    border: 2.5px solid rgb(0, 0, 0);
+}
+
+th {
+    background-color:#775AB7;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+}
+.but{
+    width: 44%;
+    height:30px;
+    font-size: 15px;
+    color:white;
+    background-color:#775AB7 ;
+    padding: 5px;
+}
+.but2{
+    width: 44%;
+    height:30px;
+    font-size: 15px;
+    color:white;
+    background-color:red ;
+    padding: 5px;
+}
+.but1{
+    padding: 3px;
+    margin-left: 10px;
+}

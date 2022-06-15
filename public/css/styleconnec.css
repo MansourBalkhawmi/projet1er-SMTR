@@ -1,0 +1,94 @@
+body{
+    background-image: url(../images/design-header.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height:730px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #775AB7;
+    color: #775AB7;
+    width: 100%;
+    height: 150px;
+    border: solid;
+    margin-top: -80px;
+}
+.logo{
+    width: 20%;
+    height: 195px;
+    margin-left: 25px;
+}
+img{
+    width: 54%;
+    height: 100px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+.a{
+    width: 50%;
+    height: 100px;
+   font-size: 35px;
+   color: white;
+   margin-top: 60px;
+}
+article{
+    width: 45%;
+    height: 580px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+.b{
+    color: #775AB7;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+span{
+    color: red;
+    margin-left: 20%;
+}
+
+input{
+ border:solid #775AB7;
+ width: 60%;
+ height: 40px;
+ margin-top: 15px;
+ margin-left: 20%;
+ border-radius: 42px;
+ font-size: 15px;
+}
+form{
+    margin-top: 40px;
+}
+.c{
+    margin-top: -30px;
+}
+button{
+    background-color: #775AB7;
+    width: 28%;
+    height: 50px;
+    margin-left: 38%;
+    margin-top: 55px;
+    border-radius: 15px;
+    font-size: 27px;
+    color: white;
+}
+.e{
+    font-size: 25px;
+    margin-left: 40%;
+    margin-top: 40px;
+    color: #775AB7;
+}
+.f{
+    font-size: 25px;
+    margin-left: 43%;
+    margin-top: 25px;
+    color: #775AB7;
+}
