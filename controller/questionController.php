@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
     if ($_POST['action'] == "CREER") {
         unset($_POST["controller"]);
         unset($_POST["action"]);
+      
        Questionnaire($_POST);
     }   
 } 
@@ -22,9 +23,9 @@ function Questionnaire($questionnaire):void{
     $arrayError=array();
     extract($questionnaire);
     $newquestion= [];
-    $questionnaire['id'] = uniqid();
+   
     // AddQuestion($questionnaire);
-    /* var_dump($questionnaire); die; */
+   /*  var_dump($questionnaire); die; */
     /* header("location:" . WEB_ROUTE . "?controller=AdminController&view=listequestion"); */
  
  
@@ -33,30 +34,34 @@ function Questionnaire($questionnaire):void{
     type_reponse($typeQuestion,'typeQuestion',$arrayError,);
     reponse($reponse,'Reponse', $arrayError);
     valid_point($arrayError, $numero,'numero');
-   
-    if (!isset($arrayError)) {
-        if ($result != null) {
-            $_SESSION['questionAJOUTER'] = $result;}
-        if ($data['id'] != "") {
- 
+  
+    if (count($arrayError) == 0) {
+       
+       /*  if ($result != null) {
+            $_SESSION['questionAJOUTER'] = $result;} */
+
+        if ($questionnaire['id'] != "") {
+           
             modificationQuestion($data);
         } else {
             $newquestion = [
                 "question" => $question,
                 "typeQuestion" => $typeQuestion,
-                "Reponse" => [
+                "Reponse" => 
                     $reponse
-                ],
-                "bonneReponse" => [
+                ,
+                "bonneReponse" => 
                     $bonneReponse
-                ],
+                ,
                 "numero" => $numero,
                 "id" => uniqid()
  
             ];
+           
+            AddQuestion($newquestion);
         }
        
-        AddQuestion($newquestion);
+        
        
         $_SESSION['questionAJOUTER']=$Question;
         header("location:" . WEB_ROUTE . "?controller=questionController&view=question");

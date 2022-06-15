@@ -32,6 +32,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
         
            inscription($_POST , $_FILES);
        } elseif ($_POST['action'] == "inscription1") {
+           unset($_POST["controller"]);
+           unset($_POST["action"]);
             inscription1($_POST , $_FILES);
             }
     }
@@ -143,25 +145,37 @@ function inscription1($inscription1,$files) {
                     $data['fileToUpload'] = $files['fileToUpload']['name'];
                 }
 
-                if($data['id'] != ""){
+                if($inscription1['id'] != ""){
+                    $user = [
+                        "nom" => $nom,
+                        "prenom" => $prenom,
+                        "email" => $email,
+                        "password" => $password,
+                        "confirmPassword" => $confirmPassword,
+                        "id" => $id,
+                        "role"=> 'ROLE_Admin',
+                        "avatar"=> $files['fileToUpload']['name']
+                    ];
+                   /*  var_dump($user); die; */
+                    modification($user);
+                   
 
-                    modification($data);
                 }else{
                     $user = [
                     "nom" => $nom,
                     "prenom" => $prenom,
                     "email" => $email,
                     "password" => $password,
+                    "confirmPassword" => $confirmPassword,
                     "id" =>uniqid(),
                     "role"=> 'ROLE_Admin',
                     "avatar"=> $files['fileToUpload']['name']
                 ];
-                
+                 addUser($user);
                 }
                 
-                addUser($user);
-                $_SESSION['userConnected'] = $user;
-                header("location:".WEB_ROUTE."?controller=formController&view=accueil1");
+              
+                header("location:".WEB_ROUTE."?controller=userController&view=list.admin");
                
             } else {
                 $_SESSION['arrayError'] = $arrayError;

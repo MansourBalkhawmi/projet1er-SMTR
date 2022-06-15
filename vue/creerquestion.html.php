@@ -32,9 +32,11 @@ if (isset($_SESSION['arrayError'])) {
             <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button>Déconnecté</button> </a></div>
         </div>
         <div class="a2">
-            <form action="<?=WEB_ROUTE?>" method="POST" enctype="multipart/form-data">
-   <input type="hidden" name="controller" value="questionController">
-   <input type="hidden" name="action" value="CREER">
+            <form action="<?=WEB_ROUTE?>" method="POST">
+            <input type="hidden" name="controller" value="questionController">
+            <input type="hidden" name="action" value="CREER">
+            <input type="hidden" name="id" value="">
+
    <div class="cadree">
        <div class="saisirdesquestions">
            Question: <textarea name="question" id="" cols="30" rows="10"></textarea>
@@ -52,7 +54,7 @@ if (isset($_SESSION['arrayError'])) {
        
        <span id="plus">
            <i class="fa-solid fa-plus breukh"></i><br><br>
-           <span><?php echo isset($arrayError['typeQuestion']) ? $arrayError['typeQuestion'] : '' ?></span>
+           <span><br><?php echo isset($arrayError['typeQuestion']) ? $arrayError['typeQuestion'] : '' ?></span>
        </span>
        <label id="error"></label>
        <div id="rep">
@@ -87,6 +89,7 @@ if (isset($_SESSION['arrayError'])) {
        `
                <label for="">Réponse ${nbr}</label>
                <input type="text" name="reponse[]" class="TAILLE2">
+               <input type="hidden" name="bonneReponse[]" value="${nbr}">
                <i class="fa fa-trash" ></i>
       `
        }else{

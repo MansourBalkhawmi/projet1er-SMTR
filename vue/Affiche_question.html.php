@@ -29,13 +29,14 @@
 
 <h3> <?php echo $key + 1, "." . $val['question']; ?></h3>
 
-<?php foreach ($val['reponse'] as $reps => $rep) : ?>
+<?php foreach ($val['Reponse'] as $reps => $rep) : ?>
     <?php if ($val["typeQuestion"] == "multiple") : ?>
         <input type="checkbox" name="choix"><?php echo $rep  ?><br>
     <?php elseif ($val["typeQuestion"] == "unique") : ?>
         <input type="radio" name="choix1"><?php echo $rep ?> <br>
-    <?php else : ?>
-        <input type="text" value="<?php echo $rep ?> " style="border:3px solid #775AB7 ;height: 25px;width:50%">
+        <?php elseif ($val["typeQuestion"] == "simple") : ?>
+    
+        <input type="text" value="<?php echo $rep ?> hhhhhhh" style="border:3px solid #775AB7 ;height: 25px;width:50%">
 
     <?php endif; ?>
 

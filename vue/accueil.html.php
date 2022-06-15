@@ -63,7 +63,7 @@ if (isset($_SESSION['arrayError'])) {
             </div>
             <div class="b5">
                 <label for="">Confirmer votre mot de passe</label><br>
-                <input type="password" name="confirmPassword" id="" value="<?=isset($user['confirmPassword']) ? $user['confirmPassword'] : '' ?>" class="inputs">
+                <input type="password" name="confirmPassword" id=""value="<?=isset($user['confirmPassword']) ? $user['confirmPassword'] : '' ?>" class="inputs">
                 <span><br><?php echo isset($arrayError['confirmPassword']) ? $arrayError['confirmPassword'] : '' ?></span>
             </div>
             <div class="b6">
