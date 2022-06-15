@@ -36,7 +36,7 @@
         <input type="radio" name="choix1"><?php echo $rep ?> <br>
         <?php elseif ($val["typeQuestion"] == "simple") : ?>
     
-        <input type="text" value="<?php echo $rep ?> hhhhhhh" style="border:3px solid #775AB7 ;height: 25px;width:50%">
+        <input type="text" value="<?php echo $rep ?>" style="border:3px solid #775AB7 ;height: 25px;width:50%">
 
     <?php endif; ?>
 
