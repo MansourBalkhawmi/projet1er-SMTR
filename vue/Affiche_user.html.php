@@ -43,7 +43,7 @@
                         <td><?php echo $val['nom'];?></td>
                         <td><?php echo $val['prenom'];?></td>
                         <td><?php echo $val['email'];?></td>
-                        <td></td>
+                        <td><?php $a=rand(0,20);    echo $a;?></td>
                         <td><?php echo $val['avatar'];?></td>
                        
                     </tr>
@@ -51,7 +51,26 @@
                 <?php endforeach;?>
             </table>
          <?php endif;?>
+         <div  class="pagination">
+         <?php for($i = 1; $i <= $totalPage; $i++):?>
+       <a href="<?= WEB_ROUTE.'/?controller=userController&view=list.user&page='.$i.''?>">
+       <button class="mm"><?php echo $i; ?></button> 
+   </a>
+       <?php endfor;?>
+       </div>
             </div>
         </div>
+        <style>
+        .mm{
+       width: 30px;
+       background-color: #775AB7;
+       color: white;
+       margin: 10px;
+        } 
+        .pagination{
+            margin-left: 47%;
+            margin-top: 15px;
+        }
+       </style>
 </body>
 </html>

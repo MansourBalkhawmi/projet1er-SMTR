@@ -40,13 +40,37 @@
 
     <?php endif; ?>
 
-
 <?php endforeach; ?>
+<div class="but1">
+                            <a class="but2" href="<?= WEB_ROUTE.'/?controller=questionController&view=deleted&id='.$val['id']?>"> Effacer</a>
+                            <a class="but2" href="<?= WEB_ROUTE.'/?controller=questionController&view=edite&id='.$val['id']?>"> Modifier</a>
+ </div> <br>
 <?php endforeach; ?>
 
    </div>
+  
 </form>
+<div  class="pagination">
+   <?php for($i = 1; $i <= $totalPage; $i++):?>
+       <a href="<?= WEB_ROUTE.'/?controller=questionController&view=question&page='.$i.''?>">
+     <button class="mm"><?php echo $i; ?></button> 
+   </a>
+       <?php endfor;?>
 
-        
+       </div>
+    
+       
+       </div>  
+       <style>
+        .mm{
+       width: 30px;
+       background-color: #775AB7;
+       color: white;
+       margin: 10px;
+        } 
+        .pagination{
+            margin-left: 24%;
+        }
+       </style>
 </body>
 </html>

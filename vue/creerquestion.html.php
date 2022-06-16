@@ -35,17 +35,17 @@ if (isset($_SESSION['arrayError'])) {
             <form action="<?=WEB_ROUTE?>" method="POST">
             <input type="hidden" name="controller" value="questionController">
             <input type="hidden" name="action" value="CREER">
-            <input type="hidden" name="id" value="">
+            <input type="hidden" name="id" value="<?=isset($Question['id']) ? $Question['id'] : '' ?>">
 
    <div class="cadree">
        <div class="saisirdesquestions">
-           Question: <textarea name="question" id="" cols="30" rows="10"></textarea>
+           Question: <textarea name="question" id="" value="<?=isset($Question['question']) ? $Question['question'] : '' ?>" cols="30" rows="10"></textarea>
            <span><br><?php echo isset($arrayError['question']) ? $arrayError['question'] : '' ?></span>
        </div><br>
-       Nombre de point: <input type="number" name="numero" class="TAILLE">
+       Nombre de point: <input type="number" name="numero" value="<?=isset($Question['numero']) ? $Question['numero'] : '' ?>" class="TAILLE">
        <span><?php echo isset($arrayError['numero']) ? $arrayError['numero'] : '' ?></span><br><br>
        Type de réponses:
-       <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
+       <select name="typeQuestion" id="typeQuestion"value="<?=isset($Question['typeQuestion']) ? $Question['typeQuestion'] : '' ?>" class="TAILLE1">
            <option value="">Donnez le type de réponse</option>
            <option value="simple" >Réponse simple</option>
            <option value="unique">Réponse unique</option>

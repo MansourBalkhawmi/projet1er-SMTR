@@ -30,6 +30,30 @@ function AddQuestion(array $Question) {
     $json = file_get_contents(ROUTE_DIR.'data/question.data.json');
     return json_decode($json, true);
  }
+
+ function deleteQuestion(string $id):bool{
+    $data = get_file_contentQuestion();
+    $tab=[];
+    $yes=false;
+    
+    foreach ($data as $value) {
+        if ($value['id'] == $id) {
+            $yes = true;
+        }else{
+            $tab [] = $value;
+        }
+    }
+    ajouter_fichierq($tab);
+    return $yes;
+     
+}
+
+
+function ajouter_fichierq(array $array) {
+    $json = json_encode($array);
+    file_put_contents(ROUTE_DIR.'data/question.data.json', $json);
+}
+
  
  function ajouter_Question(array $array) {
     $json = json_encode($array);
@@ -45,26 +69,21 @@ function AddQuestion(array $Question) {
     }
     ajouter_Question($modifQuestion);
  }
- /* function nombrePageTotal($array, $nombreElement): int {
-     $nombrePage=0;
-     $longArray = count($array);
-     if ($longArray % $nombreElement ==0) {
-         $nombrePage = $longArray / $nombreElement ;
-     }
-     return $nombrePage;
+ function getListToDisplay(array $arrayPersonne, $page, $taillePage) {
+    $indiceDepart = ($taillePage*$page) - $taillePage;
+    $indiceArriver = $indiceDepart + $taillePage - 1;
+    $arrayPaged = [];
+ 
+    for ($i=$indiceDepart; $i< count($arrayPersonne); $i++){
+        if ($indiceArriver < count($arrayPersonne)) {
+            array_push($arrayPaged, $arrayPersonne[$i]);
+            if ($i == $indiceArriver) {
+                break;
+            }
+        }else {
+            array_push($arrayPaged, $arrayPersonne[$i]);
+        }
+    }
+    return $arrayPaged;
  }
- function paginer($array, $nombreElement, $page): array{
-     $arrayElement = [] ;
-     $indiceDepart = ($page*$nombreElement) - $nombreElement;
-     $limitElement = $page*$nombreElement ; 
-     for ($i=$indiceDepart; $i < $limitElement; $i++) { 
-         if ($i >= count($array)) {
-            return $arrayElement ;
-     } else {
-         $arrayElement[] = $array[$i] ;
-     }
- } 
- return $arrayElement ;
-} */
-
 ?>

@@ -1,6 +1,8 @@
 <?php
 
+
 if (is_user_connect() || (isset($_REQUEST['controller']) && $_REQUEST['controller'] == "securityController")) {
+   
     if (isset($_REQUEST['controller'])) {
         if($_REQUEST['controller'] == "formController") {
             require_once(ROUTE_DIR.'controller/formController.php');
@@ -14,6 +16,7 @@ if (is_user_connect() || (isset($_REQUEST['controller']) && $_REQUEST['controlle
             require_once(ROUTE_DIR.'controller/questionController.php');
         }
     } else {
+       
         require_once(ROUTE_DIR.'vue/security/connexion.html.php');
     } 
 } else {

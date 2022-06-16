@@ -54,8 +54,27 @@
                 <?php endforeach;?>
             </table>
          <?php endif;?>
+         <div  class="pagination">
+         <?php for($i = 1; $i <= $totalPage; $i++):?>
+       <a href="<?= WEB_ROUTE.'/?controller=userController&view=list.admin&page='.$i.''?>">
+       <button class="mm"><?php echo $i; ?></button> 
+   </a>
+       <?php endfor;?>
+       </div>
             </div>
         </div>
         </div>
+        <style>
+        .mm{
+       width: 30px;
+       background-color: #775AB7;
+       color: white;
+       margin: 10px;
+        } 
+        .pagination{
+            margin-left: 45%;
+            margin-top: 15px;
+        }
+       </style>
 </body>
 </html>

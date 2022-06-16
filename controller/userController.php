@@ -3,12 +3,27 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['view'])) {
         if ($_GET['view'] == "add.user") {
             require_once(ROUTE_DIR.'vue/add_user.html.php');
+
         } elseif ($_GET['view'] == "list.admin") {
-            $users = get_list_user();
+            $page = 1;
+            if (isset($_GET["page"])) {
+                $page = intval($_GET["page"]);
+            }
+            $users = get_list_user(); 
+          $totalPage=countpage(5, $users);
+          $users= getListToDisplay($users, $page , 5);
             require_once(ROUTE_DIR.'vue/Affiche_admin.html.php');
+
         } elseif ($_GET['view'] == "list.user") {
+            $page =1;
+            if (isset($_GET["page"])) {
+                $page = intval($_GET["page"]);
+            }
             $users = get_list_user();
+          $totalPage=countpage(5, $users);
+          $users= getListToDisplay($users, $page , 5);
             require_once(ROUTE_DIR.'vue/Affiche_user.html.php');
+            
         }elseif ($_GET['view'] == "delete") {
             if(isset($_GET['id'])){
                 delete($_GET['id']);

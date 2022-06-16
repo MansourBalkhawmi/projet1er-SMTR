@@ -76,7 +76,7 @@ function login_password_exist($login, $password) {
 
     return null;
 }
-/* function nombrePageTotal($array, $nombreElement): int {
+function nombrePageTotal($array, $nombreElement): int {
     $nombrePage=0;
     $longArray = count($array);
     if ($longArray % $nombreElement ==0) {
@@ -96,6 +96,18 @@ function paginer($array, $nombreElement, $page): array{
     }
 } 
 return $arrayElement ;
-} */
+}
+
+function countpage(int $taillePage, array $arrayPersonne) {
+    $nbrePage = intdiv(count($arrayPersonne), $taillePage);
+    if (count($arrayPersonne)%$taillePage != 0) {
+        $nbrePage = $nbrePage + 1;
+    }
+    return $nbrePage;
+ }
+ 
+ 
+ 
+ 
 
 ?>
