@@ -45,7 +45,7 @@ if (isset($_SESSION['arrayError'])) {
             </div>
             <div class="b4">
                 <label for="">Mot de passe</label><br>
-                <input type="text" name="password" id="" class="inputs">
+                <input type="password" name="password" id="" class="inputs">
                 <span><br><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span>
             </div>
             <div class="b5">

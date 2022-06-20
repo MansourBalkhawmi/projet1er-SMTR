@@ -29,7 +29,7 @@ if (isset($_SESSION['arrayError'])) {
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=userController&view=list.user'?>" class="a">Liste Joueurs</a></div>
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=questionController&view=creerquestion'?>" class="a" style="color: black;">Créer Questions</a></div>
             </div>
-            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button>Déconnecté</button> </a></div>
+            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button>Déconnexion</button> </a></div>
         </div>
         <div class="a2">
             <form action="<?=WEB_ROUTE?>" method="POST">
@@ -39,7 +39,9 @@ if (isset($_SESSION['arrayError'])) {
 
    <div class="cadree">
        <div class="saisirdesquestions">
-           Question: <textarea name="question" id="" value="<?=isset($Question['question']) ? $Question['question'] : '' ?>" cols="30" rows="10"></textarea>
+           Question: <textarea name="question" id=""value=""  cols="30" rows="10">
+           <?=isset($Question['question']) ? $Question['question'] : ''?>
+           </textarea>
            <span><br><?php echo isset($arrayError['question']) ? $arrayError['question'] : '' ?></span>
        </div><br>
        Nombre de point: <input type="number" name="numero" value="<?=isset($Question['numero']) ? $Question['numero'] : '' ?>" class="TAILLE">

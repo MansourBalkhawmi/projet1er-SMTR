@@ -1,35 +1,99 @@
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: 80%;
-    height: 600px;
-    margin-left: 13%;
-    background-color: #775AB7;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-body{
-    background-image: url(../images/design-header.jpg);
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(229, 223, 223);
+    flex-wrap: wrap;
+    margin-top:-50px;
+}
+.box
+{
+    position: relative;
+    margin: 50px;
+}
+.box .text
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: black;
+}
+.box .text h2
+{
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.box .text small
+{
+    font-size: 18px;
+    display: block;
+}
+
+.circle
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle .points
+{
+    width: 3px;
+    height: 15px;
+    background: #070;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+    
+}
+.points.marked
+{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+@keyframes glow
+{
+    0%
+    {
+        background: #070;
+        box-shadow: none;
+    }
+    100%
+    {
+        background: var(--bgColor);
+        box-shadow: 0 0 10px var(--bgColor);
+    }
 }
 .a1{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around;
-    background-color: white;
-    width: 100%;
+    background-color: #775AB7;
+    width: 90%;
     height: 100px;
-}
-.ima{
-    width:100%;
-    height:87px ;
-    border-radius: 50%;
-    margin-top: -3px;
+    margin-top: -60px;
 }
 .a11{
     width:7.5%;
     height:82px ;
     border-radius: 50%;
-    border: 1px solid;
+    margin-left: 90px;
+   
 
 }
 .a12{
@@ -48,7 +112,7 @@ body{
     margin-top: 30px;
 }
 .a{
-    color: black;
+    color: white;
    
 }
 .a:hover{
@@ -59,33 +123,16 @@ body{
     height:45px ;
 }
 .a2{
-    background-color: #775AB7;
+    background-color: white;
     width: 100%;
     height: 440px;
 }
-.a21{
-    clear: both;
-    background-color: white;
-    width: 42%;
-    height: 460px;
-    margin-left: 27%;
-    border-radius: 55px;
-    margin-top: -59px;
-}
-.a211{
-    width: auto;
-    height: 60px;
-    color: #775AB7;
-    font-size: 35px;
-    margin-left: 25%;
-
-}
 button{
-    width: 73%;
+    width: 75%;
     height:40px;
     font-size: 19px;
-    color: white;
-    background-color: #775AB7;
+    color: #775AB7;
+    background-color: white;
    
 
 }
@@ -96,7 +143,15 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.ima{
+    width:90%;
+    height:87px ;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-left: 20px;
+}
 .aa{
-    color: white;
-    font-size: 22px;
+    font-size: 25px;
+    color: #4a337d;
+    margin: 2px;
 }

@@ -19,7 +19,7 @@
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=userController&view=list.user'?>" class="a">Liste Joueurs</a></div>
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=questionController&view=creerquestion'?>" class="a">Créer Questions</a></div>
             </div>
-            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button>Déconnecté</button> </a></div>
+            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button>Déconnexion</button> </a></div>
         </div>
         <div class="a2">
             <form action="<?=WEB_ROUTE?>" method="POST" enctype="multipart/form-data">
@@ -42,8 +42,8 @@
 
 <?php endforeach; ?>
 <div class="but1">
-                            <a class="but2" href="<?= WEB_ROUTE.'/?controller=questionController&view=deleted&id='.$val['id']?>"> Effacer</a>
-                            <a class="but2" href="<?= WEB_ROUTE.'/?controller=questionController&view=edite&id='.$val['id']?>"> Modifier</a>
+                        <div class="but2">   <a href="<?= WEB_ROUTE.'/?controller=questionController&view=deleted&id='.$val['id']?>" style="color:white"> Effacer</a></div> 
+                           <div class="but3"> <a href="<?= WEB_ROUTE.'/?controller=questionController&view=edite&id='.$val['id']?>" style="color:white"> Modifier</a></div>
  </div> <br>
 <?php endforeach; ?>
 

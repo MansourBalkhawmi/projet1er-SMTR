@@ -88,36 +88,4 @@ function add(array $data){
     
 }
 
-/* function Pagination ($data, $position){
-    $nbrPage =0 ;
-    $page= 1;
-    $suivant= 2;
-    $nbrElement= 3;
-    $precedent= 0;
-    
-    if (isset($position)) {
-        $page = 1;
-        $_SESSION['user_admin'] = $data ;
-        $nbrPage = nombrePageTotal($_SESSION['user_admin'], 3);
-        $list_user = paginer($_SESSION['user_admin'],$page,3);
-    }
-
-    if (isset($position)) {
-        $page = $position ;
-        $suivant = $page + 1 ;
-        $precedent = $page - 1 ;
-        if (isset($_SESSION['user_admin'])) {
-            $_SESSION['user_admin'] = $data ;
-            $nbrPage = nombrePageTotal($_SESSION['user_admin'],3);
-            $list_user = paginer($_SESSION['user_admin'],$page,3);
-        }
-    }
-    return [
-        'precedent'=> $precedent,
-        'suivant'=> $suivant,
-        'nbrPage'=> $nbrPage,
-        'data'=> $list_user
-    ];
-}
- */
 ?>

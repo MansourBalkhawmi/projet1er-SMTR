@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 32%;
+    height: 510px;
+    border: 1px solid ;
+    margin-top: 75px;
+    margin-left: 5%;
+    box-shadow: 4px 4px 4px ;
+}
+.section2{
+    width: 53%;
+    height: 590px;
+    border: 1px solid ;
+    margin-top: 20px;
+    margin-left: 6%;
+    box-shadow: 5px 5px 5px black;
+}
+.d1{
+    width: 100%;
+    height: 190px;
+    background-color: #775AB7;
+}
+.d2{
+    width: 100%;
+    height:250px;
+    font-size: 30px;
+    font-family: roboto;
+    margin-left: 10px;
+}
+.d22{
+    margin-top: 30px;
+}
+.d222{
+    margin-top: 37px;
+}
+.d2222{
+    margin-top: 37px;
+}
+.d3{
+    width: 100%;
+    height: 50px;
+}
+
+.ima{
+    width:29%;
+    height:140px ;
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.aa{
+    color: white;
+    font-size: 25px;
+    font-family: roboto;
+    margin-top: -9px;
+}
+.BTN{
+    width: 38%;
+    height:40px;
+    font-size: 20px;
+    font-family: roboto;
+    color:white ;
+    background-color: #775AB7;
+    margin-top: 5px;
+    margin-left: 30%;
+   
+
+}
+button:hover {background-color: #4a337d}
+
+button:active {
+  background-color:  #4a337d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.a:hover{
+	color:black;
+    background-color: #775AB7;
+}
+/* .a1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #775AB7;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+}
+.a11{
+    width:7.5%;
+    height:82px ;
+    border-radius: 50%;
+   
+
+}
+.a12{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:62%;
+    height:60px ;
+    margin-top: 40px;
+}
+.a22{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.a{
+    color: white;
+   
+}
+.a13{
+    width:14%;
+    height:45px ;
+}
+.a2{
+    background-color: white;
+    width: 100%;
+    height: 440px;
+}
+.a21{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    height: 460px;
+    margin-left: 27%;
+    border-radius: 10px;
+    margin-top: -32px;
+}
+ */

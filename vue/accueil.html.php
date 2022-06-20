@@ -28,12 +28,13 @@ if (isset($_SESSION['arrayError'])) {
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=userController&view=list.user'?>" class="a">Liste Joueurs</a></div>
                 <div class="a22"><a href="<?php echo WEB_ROUTE.'?controller=questionController&view=creerquestion'?>" class="a">Créer Questions</a></div>
             </div>
-            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button class="BTN">Déconnecté</button> </a></div>
+            <div class="a13"> <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>"> <button class="BTN">Déconnexion</button> </a></div>
         </div>
         <div class="a2">
             <div >
             <label for="" class="aa">Nom:<?php echo $_SESSION['userConnected']['prenom']?> </label> <br>
                   <label for=""  class="aa">Prenom: <?php echo $_SESSION['userConnected']['nom']?></label><br>
+                  <div class="bb"><a href="<?php echo WEB_ROUTE.'?controller=formController&view=accueil1'?>" class="bb1">Tableau de Bord</a></div>
                 </div>  
             <div class="a21">
         <div class="b" style="margin-bottom: 10px;">Création d'Admin</div>

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     margin-top: 10px;
     width: 80%;
-    height: 600px;
+    height: 580px;
     margin-left: 13%;
     background-color: white;
 }
@@ -67,10 +67,10 @@ body{
     background-color: white;
     border: 3px solid #775AB7;
     width: 42%;
-    height: 455px;
+    height: 450px;
     margin-left: 27%;
     border-radius: 55px;
-    margin-top: -45px;
+    margin-top: -60px;
 }
 button{
     width: 75%;
@@ -161,4 +161,13 @@ label{
 .aa{
     color: #775AB7;
     font-size: 15px;
+} 
+.bb1{
+    color:white;
+    font-size: 15px;
+    margin-left: 1.1%;
+    top: 55px;
+    background-color: #4a337d;
+    border:1px solid #666;
+    padding: 1px;
 } 

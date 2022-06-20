@@ -21,6 +21,17 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             $Question=get_question_by_id($_GET['id']);
             require_once(ROUTE_DIR.'vue/creerquestion.html.php');
         
+        } elseif ($_GET['view'] == "jouer") {
+
+            $page = 1;
+           if (isset($_GET["page"])) {
+               $page = intval($_GET["page"]);
+           }
+           $Questions = get_list_question(); 
+         $totalPage=countpage(2, $Questions);
+         $Questions= getListToDisplay($Questions, $page , 2);
+            require_once(ROUTE_DIR.'vue/jouer.html.php');
+        
         } 
     }
 }elseif ($_SERVER['REQUEST_METHOD'] == "POST") {  
