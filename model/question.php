@@ -86,4 +86,5 @@ function ajouter_fichierq(array $array) {
     }
     return $arrayPaged;
  }
+ 
 ?>

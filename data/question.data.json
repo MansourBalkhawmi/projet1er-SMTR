@@ -1,1 +1,83 @@
-[{"question":"le Capital du Senegal ?","typeQuestion":"unique","Reponse":["Thi\u00e8s","Parie","Dakar"],"bonneReponse":["3"],"numero":"5","id":"62aa11caf0e25"},{"question":"Quels sont les Systemes d'exploitation ?","typeQuestion":"multiple","Reponse":["WINDOWS","HTML\/CSS","UBUNTU","JAVA SCRIPT"],"bonneReponse":["1","3"],"numero":"5","id":"62aa16de5874f"},{"question":"Qui a etait la premi\u00e8re Femme du Prophet Mouhamed(PSl)?","typeQuestion":"simple","Reponse":["Khadija"],"bonneReponse":["1"],"numero":"5","id":"62ab3bc123088"},{"question":"Capital de la France ?","typeQuestion":"unique","Reponse":["Dakar","Rome","Paris"],"bonneReponse":["3"],"numero":"3","id":"62ab60d680e81"},{"question":"qui est matar?","typeQuestion":"unique","Reponse":["ROBOT","HUMAIN"],"bonneReponse":["2"],"numero":"6","id":"62ae116e5a84d"}]
+[
+    {
+        "question": "le Capital du Senegal ?",
+        "typeQuestion": "unique",
+        "Reponse": [
+            "Thi\u00e8s",
+            "Parie",
+            "Dakar"
+        ],
+        "bonneReponse": [
+            "3"
+        ],
+        "numero": "5",
+        "id": "62aa11caf0e25"
+    },
+    {
+        "question": "Quels sont les Systemes d'exploitation ?",
+        "typeQuestion": "multiple",
+        "Reponse": [
+            "WINDOWS",
+            "HTML\/CSS",
+            "UBUNTU",
+            "JAVA SCRIPT"
+        ],
+        "bonneReponse": [
+            "1",
+            "3"
+        ],
+        "numero": "5",
+        "id": "62aa16de5874f"
+    },
+    {
+        "question": "Qui a etait la premi\u00e8re Femme du Prophet Mouhamed(PSl)?",
+        "typeQuestion": "simple",
+        "Reponse": [
+            "Khadija"
+        ],
+        "bonneReponse": [
+            "1"
+        ],
+        "numero": "5",
+        "id": "62ab3bc123088"
+    },
+    {
+        "question": "Capital de la France ?",
+        "typeQuestion": "unique",
+        "Reponse": [
+            "Dakar",
+            "Rome",
+            "Paris"
+        ],
+        "bonneReponse": [
+            "3"
+        ],
+        "numero": "3",
+        "id": "62ab60d680e81"
+    },
+    {
+        "question": "qui est matar?",
+        "typeQuestion": "unique",
+        "Reponse": [
+            "ROBOT",
+            "HUMAIN"
+        ],
+        "bonneReponse": [
+            "2"
+        ],
+        "numero": "6",
+        "id": "62ae116e5a84d"
+    },
+    {
+        "question": "Quel est le plus grand d\u00e9sert du monde ?",
+        "typeQuestion": "simple",
+        "Reponse": [
+            " Le Sahara"
+        ],
+        "bonneReponse": [
+            "1"
+        ],
+        "numero": "5",
+        "id": "62b1999552dff"
+    }
+]

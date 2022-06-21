@@ -9,9 +9,9 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             if (isset($_GET["page"])) {
                 $page = intval($_GET["page"]);
             }
-            $users = get_list_user(); 
-          $totalPage=countpage(5, $users);
-          $users= getListToDisplay($users, $page , 5);
+            $tabuser = get_list_user1(); 
+          $totalPage=countpage(5, $tabuser);
+          $users= getListToDisplay($tabuser, $page , 5);
             require_once(ROUTE_DIR.'vue/Affiche_admin.html.php');
 
         } elseif ($_GET['view'] == "list.user") {
@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             if (isset($_GET["page"])) {
                 $page = intval($_GET["page"]);
             }
-            $users = get_list_user();
+            $users = get_list_user2();
           $totalPage=countpage(5, $users);
           $users= getListToDisplay($users, $page , 5);
             require_once(ROUTE_DIR.'vue/Affiche_user.html.php');

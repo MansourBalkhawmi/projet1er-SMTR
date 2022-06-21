@@ -38,7 +38,6 @@
                     <th>image</th>
                 </tr>
                 <?php foreach ($users as $key => $val):?>
-                    <?php if($val['role'] == 'ROLE_JOUEUR'): ?>
                     <tr>
                         <td><?php echo $val['nom'];?></td>
                         <td><?php echo $val['prenom'];?></td>
@@ -47,7 +46,6 @@
                         <td><?php echo $val['avatar'];?></td>
                        
                     </tr>
-                    <?php endif;?>
                 <?php endforeach;?>
             </table>
          <?php endif;?>

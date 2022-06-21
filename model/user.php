@@ -17,6 +17,35 @@ function get_list_user() {
 
     return $users;
 }
+function get_list_user1() {
+    $tabuser= [];
+    $users = get_file_content();
+    if (!isset($users)) {
+        $users = [];
+    }
+    foreach ($users as $key => $val){
+        if($val['role'] == 'ROLE_Admin'){
+         $tabuser[]= $val;
+        }
+       
+    }
+    return $tabuser;
+}
+
+function get_list_user2() {
+    $tabuser= [];
+    $users = get_file_content();
+    if (!isset($users)) {
+        $users = [];
+    }
+    foreach ($users as $key => $val){
+        if($val['role'] == 'ROLE_JOUEUR'){
+         $tabuser[]= $val;
+        }
+       
+    }
+    return $tabuser;
+}
 
 function get_user_by_id(string $id) {
     $users = get_list_user();

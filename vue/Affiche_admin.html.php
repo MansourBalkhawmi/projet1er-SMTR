@@ -37,7 +37,6 @@
                     <th>Action</th>
                 </tr>
                 <?php foreach ($users as $key => $val):?>
-                    <?php if($val['role'] == 'ROLE_Admin'): ?>
                     <tr>
                         <td><?php echo $val['nom'];?></td>
                         <td><?php echo $val['prenom'];?></td>
@@ -50,7 +49,6 @@
                         </td>
                        
                     </tr>
-                    <?php endif;?>
                 <?php endforeach;?>
             </table>
          <?php endif;?>

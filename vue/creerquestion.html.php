@@ -39,8 +39,7 @@ if (isset($_SESSION['arrayError'])) {
 
    <div class="cadree">
        <div class="saisirdesquestions">
-           Question: <textarea name="question" id=""value=""  cols="30" rows="10">
-           <?=isset($Question['question']) ? $Question['question'] : ''?>
+           Question: <textarea name="question" id=""value=""  cols="30" rows="10"><?=isset($Question['question']) ? $Question['question'] : ''?>
            </textarea>
            <span><br><?php echo isset($arrayError['question']) ? $arrayError['question'] : '' ?></span>
        </div><br>
