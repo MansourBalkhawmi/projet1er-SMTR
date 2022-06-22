@@ -7,15 +7,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 32%;
-    height: 510px;
+    height: 500px;
     border: 1px solid ;
-    margin-top: 75px;
+    margin-top: 48px;
     margin-left: 5%;
     box-shadow: 4px 4px 4px ;
 }
 .section2{
     width: 53%;
-    height: 590px;
+    height: 550px;
     border: 1px solid ;
     margin-top: 20px;
     margin-left: 6%;
@@ -29,7 +29,7 @@ body{
 .d2{
     width: 100%;
     height:250px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: roboto;
     margin-left: 10px;
 }
@@ -56,7 +56,7 @@ body{
 }
 .aa{
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-family: roboto;
     margin-top: -9px;
 }
@@ -83,58 +83,3 @@ button:active {
 	color:black;
     background-color: #775AB7;
 }
-/* .a1{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-around;
-    background-color: #775AB7;
-    width: 100%;
-    height: 100px;
-    margin-top: -10px;
-}
-.a11{
-    width:7.5%;
-    height:82px ;
-    border-radius: 50%;
-   
-
-}
-.a12{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    width:62%;
-    height:60px ;
-    margin-top: 40px;
-}
-.a22{
-    width: 15%;
-    height: 30px;
-    font-size: 16px;
-    margin-top: 30px;
-}
-.a{
-    color: white;
-   
-}
-.a13{
-    width:14%;
-    height:45px ;
-}
-.a2{
-    background-color: white;
-    width: 100%;
-    height: 440px;
-}
-.a21{
-    display: flex;
-    background-color: white;
-    width: 45%;
-    height: 460px;
-    margin-left: 27%;
-    border-radius: 10px;
-    margin-top: -32px;
-}
- */

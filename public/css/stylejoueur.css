@@ -10,17 +10,16 @@ section{
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 40%;
-    height: 590px;
+    width: 38%;
+    height: 500px;
     box-shadow: 5px 5px 5px #775AB7;
     margin-top: 25px;
     border: 1px solid #775AB7;
 }
 .a{
     width: 80%;
-    height: 460px;
-    font-size: 30px;
-    color: #775AB7;
+    height: 330px;
+    font-size: 25px;
     font-family: roboto;
 }
 button{
@@ -29,7 +28,7 @@ button{
     font-family: roboto;
     color: white;
     background-color: black;
-    margin-top: -10px;
+    margin-top: -120px;
    
 
 }
@@ -39,4 +38,34 @@ button:active {
   background-color:  #4a337d;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+h1
+{
+    margin-top: 45px;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 29px;
+      font-family: roboto;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

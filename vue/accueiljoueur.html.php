@@ -10,8 +10,9 @@
 <body>
 <?php require_once(ROUTE_DIR.'vue/inc/menu.html.php'); ?>
 <section>
-<div class="a"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error natus aliquid aperiam commodi, vel laudantium molestiae enim, libero ipsa quasi consequatur inventore minus laboriosam quis. Qui recusandae soluta facilis consequuntur.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur numquam eos rem laborum sed assumenda beatae maiores ullam optio voluptate, corrupti repellat maxime iusto vitae quos libero, possimus a.
+<div class="a">  <h1>BIENVENUE  sur notre QUIZ</h1>
+<br><br>
+Bienvenue cher(e) compétiteur (se) sur Challenge Brain qui est un quizz qui vous permet de tester votre Culture Générale dans tous les domaines et vous donne l’occasion d’acquérir plus de savoir et de connaissance.
 </div>
 <div class="b"> <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=jouer'?>"> <button>Cliquez pour jouer</button></a></div>
 </section>

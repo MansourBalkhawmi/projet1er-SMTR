@@ -39,8 +39,7 @@ if (isset($_SESSION['arrayError'])) {
 
    <div class="cadree">
        <div class="saisirdesquestions">
-           Question: <textarea name="question" id=""value=""  cols="30" rows="10"><?=isset($Question['question']) ? $Question['question'] : ''?>
-           </textarea>
+           Question: <textarea name="question" id=""value=""  cols="30" rows="10"><?=isset($Question['question']) ? $Question['question'] : ''?></textarea>
            <span><br><?php echo isset($arrayError['question']) ? $arrayError['question'] : '' ?></span>
        </div><br>
        Nombre de point: <input type="number" name="numero" value="<?=isset($Question['numero']) ? $Question['numero'] : '' ?>" class="TAILLE">
@@ -59,7 +58,22 @@ if (isset($_SESSION['arrayError'])) {
        </span>
        <label id="error"></label>
        <div id="rep">
-            
+       <?php foreach ($Question['Reponse'] as $key => $value) :?>
+         <?php if($Question["typeQuestion"] == "unique"): ?>
+            <input type="text" name="reponse[]" value="<?= $value ?>" class="taille22">
+            <input type="radio" name="bonneReponse[]" value="<?= $value ?>">
+            <i class="fa fa-trash" id="delete"></i>
+        <?php endif?>
+        <?php if($Question["typeQuestion"] == "simple"): ?>
+            <input type="text" name="reponse[]" value="<?= $value ?>" class="taille22">
+            <i class="fa fa-trash" id="delete"></i>
+        <?php endif?>
+        <?php if($Question["typeQuestion"] == "multiple"): ?>
+            <input type="text" name="reponse[]" value="<?= $value ?>" class="taille22">
+            <input type="checkbox" name="bonneReponse[]" value="<?= $value ?>"">
+            <i class="fa fa-trash" id="delete"></i>
+        <?php endif?>
+       <?php endforeach?>
        </div>
        <button type="submit" class="butonQuestion">Enregistrer</button>
    </div>

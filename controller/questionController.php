@@ -67,8 +67,20 @@ function Questionnaire($questionnaire):void{
             $_SESSION['questionAJOUTER'] = $result;} */
 
         if ($questionnaire['id'] != "") {
-           
-            modificationQuestion($data);
+            $newquestion = [
+                "question" => $question,
+                "typeQuestion" => $typeQuestion,
+                "Reponse" => 
+                    $reponse
+                ,
+                "bonneReponse" => 
+                    $bonneReponse
+                ,
+                "numero" => $numero,
+                "id" => $id
+ 
+            ];
+            modificationQuestion($newquestion);
         } else {
             $newquestion = [
                 "question" => $question,
