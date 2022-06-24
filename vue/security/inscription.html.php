@@ -25,9 +25,6 @@ if (isset($_SESSION['arrayError'])) {
         <form method="POST" action="<?php echo WEB_ROUTE ?>" enctype="multipart/form-data" >
         <input type="hidden" name="controller" value="securityController">
         <input type="hidden" name="action" value="inscription">
-        <!-- <input type="hidden" name="controller" value="userController">
-   <input type="hidden" name="action" value="<?=isset($user['id']) ? 'edit' : 'add_user' ?>
-    <input type="hidden" name="id" value="<?=isset($user['id']) ? $user['id'] : '' ?>"> -->
             <div class="b1">
                 <label for="">Nom</label><br>
                 <input type="text" name="nom" id="" value="<?=isset($user['nom']) ? $user['nom'] : '' ?>" class="inputs">

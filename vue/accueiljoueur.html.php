@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php require_once(ROUTE_DIR.'vue/inc/menu.html.php'); ?>
+<?php require_once(ROUTE_DIR.'vue/inc/menu1.html.php'); ?>
 <section>
 <div class="a">  <h1>BIENVENUE  sur notre QUIZ</h1>
 <br><br>

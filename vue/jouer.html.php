@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php require_once(ROUTE_DIR.'vue/inc/menu.html.php'); ?>
+<?php require_once(ROUTE_DIR.'vue/inc/menu1.html.php'); ?>
 <section class="section1">
  <div class="d1"><img src="images/uploads/<?php echo $_SESSION["userConnected"]["avatar"] ?>" alt="Pas de photo de Profil" class="ima">
  <label for="" class="aa"><?php echo $_SESSION['userConnected']['prenom']?> <?php echo $_SESSION['userConnected']['nom']?><br></label></div>

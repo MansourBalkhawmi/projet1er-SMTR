@@ -19,7 +19,7 @@ if (isset($_SESSION['arrayError'])) {
 <body>
     <header>
         <div class="logo"><img src="images/logo-fb-en.png" alt=""></div>
-        <div class="a">JOUEZ POUR UN MAX DE PLAISIR</div>
+        <div class="ave">JOUEZ POUR UN MAX DE PLAISIR</div>
     </header>
     <article>
         <div class="b">Connexion</div>

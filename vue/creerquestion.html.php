@@ -45,9 +45,26 @@ if (isset($_SESSION['arrayError'])) {
        Nombre de point: <input type="number" name="numero" value="<?=isset($Question['numero']) ? $Question['numero'] : '' ?>" class="TAILLE">
        <span><?php echo isset($arrayError['numero']) ? $arrayError['numero'] : '' ?></span><br><br>
        Type de réponses:
-       <select name="typeQuestion" id="typeQuestion"value="<?=isset($Question['typeQuestion']) ? $Question['typeQuestion'] : '' ?>" class="TAILLE1">
+         <?php if($Question["typeQuestion"] == "unique"): ?>
+            <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
+           <option value="unique"  selected >Réponse unique</option>
+       </select>
+<?php endif?>
+ <?php if($Question["typeQuestion"] == "simple"): ?>
+    <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
+           <option value="simple" selected >Réponse simple</option>
+          
+       </select>
+ <?php endif?>
+ <?php if($Question["typeQuestion"] == "multiple"): ?>
+    <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
+           <option value="multiple"selected>Réponse à choix multiple</option>
+       </select>
+  <?php endif?>
+     
+      <br> <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
            <option value="">Donnez le type de réponse</option>
-           <option value="simple" >Réponse simple</option>
+           <option value="simple">Réponse simple</option>
            <option value="unique">Réponse unique</option>
            <option value="multiple">Réponse à choix multiple</option>
        </select>
@@ -58,6 +75,7 @@ if (isset($_SESSION['arrayError'])) {
        </span>
        <label id="error"></label>
        <div id="rep">
+
        <?php foreach ($Question['Reponse'] as $key => $value) :?>
          <?php if($Question["typeQuestion"] == "unique"): ?>
             <input type="text" name="reponse[]" value="<?= $value ?>" class="taille22">
@@ -74,8 +92,9 @@ if (isset($_SESSION['arrayError'])) {
             <i class="fa fa-trash" id="delete"></i>
         <?php endif?>
        <?php endforeach?>
+
        </div>
-       <button type="submit" class="butonQuestion">Enregistrer</button>
+       <button type="submit" class="butonQuestion"><?= !isset($Question['id'])?'Enregistrer':'Modifier';?></button>
    </div>
 </form>
 <script>

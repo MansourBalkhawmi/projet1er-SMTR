@@ -29,13 +29,22 @@ img{
     margin-left: 130px;
     margin-top: 50px;
 }
-.a{
+.ave{
     width: 50%;
     height: 100px;
    font-size: 35px;
    color: white;
    margin-top: 60px;
+  
 }
+.ave {
+    color:white;
+    
+    animation: clignote 4s linear infinite;
+  }
+  @keyframes clignote {  
+    50% { opacity: 0; }
+  }
 article{
     width: 45%;
     height: 580px;

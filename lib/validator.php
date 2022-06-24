@@ -63,12 +63,5 @@ function valid_champ_user(array &$arrayError, $str, string $key) {
         $arrayError[$key] = "Veillez saisir de nombres positifs";
   }
 
- /*  function valid_nbr_reponse($valeur, string $key, array &$arrayError) {
-      if (empty($valeur)) {
-          $arrayError[$key]= "Ce champ est obligatoire";
-      }elseif ($valeur <=0) {
-        $arrayError[$key] = "Veillez saisir de nombres positifs";
-      }
-  } */
 }
 ?>
